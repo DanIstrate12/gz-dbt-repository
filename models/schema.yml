@@ -1,8 +1,8 @@
 version: 2
 sources:
-  - name: raw_gwz_sales
+  - name: raw_gz_sales
     database: gz_raw_data
-    schema: raw_gwz_sales
+    schema: raw_gz_sales
     tables:
       - name: date_date
       - name: orders_id
@@ -10,3 +10,23 @@ sources:
       - name: revenue
       - name: quantity 
 
+sources: 
+  - name: raw_gz_product
+    database: gz_raw_data
+    schema: raw_gz_product
+    tables:
+      - name: products_id
+      - name: purchSE_PRICE
+
+sources: 
+  - name: raw_gwz_ship
+    database: gz_raw_data
+    schema: raw_gwz_ship
+    tables: 
+      - name: orders_id
+      - name: shipping_fee
+      - name: shipping_fee_1
+      - name: logCost
+      - name: ship_cost
+
+    
