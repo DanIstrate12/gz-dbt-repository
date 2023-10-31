@@ -1,0 +1,12 @@
+version: 2
+sources:
+  - name: raw_gwz_sales
+    database: gz_raw_data
+    schema: raw_gwz_sales
+    tables:
+      - name: date_date
+      - name: orders_id
+      - name: pdt_id
+      - name: revenue
+      - name: quantity 
+
