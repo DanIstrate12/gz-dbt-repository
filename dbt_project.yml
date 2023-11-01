@@ -41,6 +41,7 @@ models:
     +materialized: table
 
 models:
-  intermediate:
+  mart:
     +materialized: table
-      schema: dan_finance
+    finance:
+      schema: finance
