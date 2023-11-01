@@ -1,5 +1,3 @@
-
-
 SELECT
 	orders_id,
 	date_date,
