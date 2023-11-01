@@ -5,19 +5,17 @@ sources:
     tables:
       - name: sales
         identifier: raw_gz_sales
-        description: we have one product id per orders id
-        columns:
+        description: sales of greenweez
+        tests:
+         - unique:
+             column_name: "(orders_id||'-'||pdt_id)"
+         - not_null:
+            column_name:
             - name: date_date
-              description: date when purchased
             - name: orders_id
-              description: foreign key to ship
             - name: pdt_id
-              description: foreign key to product
             - name: revenue
-              description: the amount paid by the customer to purchase the product
             - name: quantity
-              description: the quantity of products purchased for this order
-
       - name: product
         identifier: raw_gz_product
         description: products of Greenweez
