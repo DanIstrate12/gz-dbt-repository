@@ -43,3 +43,4 @@ models:
 models:
   intermediate:
     +materialized: table
+      schema: dan_finance
