@@ -1,4 +1,4 @@
-
+{{ config(materialized= 'table') }}
 SELECT 
     products_id, 
     date_date, 
